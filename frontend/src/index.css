@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-icon {
+  text-align: center;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #374151;
+}
+
+.login-card input {
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.login-card button {
+  padding: 14px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #172554;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* Header */
+
+.header {
+  background: #1e3a8a;
+  color: white;
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.header p {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
+/* Logout */
+
+.logout-button {
+  background: white;
+  color: #1e3a8a;
+  border: none;
+  padding: 11px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #e5e7eb;
+}
+
+/* Notices area */
+
+.notice-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+
+.notice-container > h2 {
+  text-align: center;
+  color: #1e3a8a;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Empty notices */
+
+.empty {
+  background: white;
+  border-radius: 16px;
+  padding: 60px 30px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.empty-icon {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.empty h2 {
+  color: #1f2937;
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.empty p {
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* Notice list */
+
+.notice-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Notice card */
+
+.notice-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-left: 6px solid #1e3a8a;
+}
+
+.notice-card h3 {
+  color: #1e3a8a;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.notice-card p {
+  color: #4b5563;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.notice-card span {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #e0e7ff;
+  color: #1e3a8a;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 30px;
+  }
+
+  .header p {
+    font-size: 16px;
+  }
+
+  .notice-container {
+    width: 92%;
+  }
+}
+/* =========================
+   DASHBOARD CONTROLS
+========================= */
+
+.dashboard-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.dashboard-title h2 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 32px;
+}
+
+.create-button {
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background: #172554;
+}
+
+/* =========================
+   CREATE NOTICE FORM
+========================= */
+
+.create-form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.create-form h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.create-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-form label {
+  font-weight: bold;
+  color: #374151;
+  margin-top: 10px;
+}
+
+.create-form input,
+.create-form textarea,
+.create-form select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.create-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-form input:focus,
+.create-form textarea:focus,
+.create-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.create-form button {
+  margin-top: 15px;
+  padding: 14px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-form button:hover {
+  background: #172554;
+}
+
+/* =========================
+   DASHBOARD MESSAGE
+========================= */
+
+.dashboard-message {
+  background: #dcfce7;
+  color: #166534;
+  padding: 14px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+.delete-button {
+  display: block;
+  margin-top: 20px;
+  padding: 9px 15px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+/* =========================
+   NOTICE SEARCH / FILTERS
+========================= */
+
+.notice-filters {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.notice-filters label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.notice-filters input,
+.notice-filters select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  background: white;
+}
+
+.notice-filters input:focus,
+.notice-filters select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+@media (max-width: 768px) {
+  .notice-filters {
+    grid-template-columns: 1fr;
+  }
+}
