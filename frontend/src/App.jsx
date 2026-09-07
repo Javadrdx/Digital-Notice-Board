@@ -890,7 +890,7 @@ function App() {
                   <p>
                     📎{" "}
                     <a
-                      href={`http://localhost:5000${notice.filePath}`}
+                      href={`https://digital-notice-board-tcg8.onrender.com${notice.filePath}`}
                       target="_blank"
                       rel="noreferrer"
                     >
