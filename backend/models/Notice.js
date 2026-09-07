@@ -46,5 +46,6 @@ const noticeSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+noticeSchema.index({ targetRole: 1, expiryDate: 1, createdAt: -1 });
 
 module.exports = mongoose.model("Notice", noticeSchema);
